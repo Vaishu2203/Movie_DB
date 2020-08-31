@@ -1,0 +1,130 @@
+section{
+    display: flex;
+    width:100%;
+    overflow-x: auto;
+}
+.movie{
+    margin-top: 30px;
+}
+#movies-search{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+section img{
+    width: 300px;
+    transition: 250ms all;
+}
+img:hover{
+    
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.content{
+    border: 1px solid lightgrey;
+    padding: 20px;;
+    display: none;
+}
+#content-close{
+    cursor: pointer;
+    position: absolute;
+    /* width: 35px;; */
+    border: 3px solid rgb(160, 226, 151);
+    border-radius: 40%;
+}
+.content div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;         
+    align-items: center;
+    margin:10px;
+}
+.content-display{
+    display: block;
+}
+h2{
+    color: rgb(179, 215, 248);
+    text-shadow: 0 0 20px rgb(3, 142, 255)
+}
+h1{
+    text-shadow: yellow;
+}
+.btn-6 {
+    background: rgb(247,150,192);
+  background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+   box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover{
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
+  
